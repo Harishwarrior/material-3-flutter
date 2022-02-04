@@ -12,8 +12,11 @@ class MaterialThreeDemo extends StatelessWidget {
       body: const Center(
         child: Text("Material 3 demo"),
       ),
+      // use NavigationBar instead of BottomNavigationBar
       bottomNavigationBar: NavigationBar(
+        // NavigationBar takes destinations instead of items
         destinations: const [
+          // also it uses NavigationDestination instead of BottomNavigationBarItem
           NavigationDestination(
             label: "Home",
             icon: Icon(Icons.home),

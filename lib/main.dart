@@ -17,8 +17,10 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Material 3 demo',
       theme: ThemeData(
+        // this generates material 3 color scheme from a single color
         colorSchemeSeed: Colors.green,
         brightness: Brightness.light,
+        // add this to use material 3 components
         useMaterial3: true,
       ),
       home: const MaterialThreeDemo(),
